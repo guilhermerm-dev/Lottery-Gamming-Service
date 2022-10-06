@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lottery.Gamming.Api", "Lottery.Gamming.Api\Lottery.Gamming.Api.csproj", "{4B261E58-224A-40C8-9DAB-29C4696004DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lottery.Gamming.Domain", "Lottery.Gamming.Domain\Lottery.Gamming.Domain.csproj", "{6B35B9AC-DA41-4446-815B-33A7DEB93B0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lottery.Gamming.Infra.CrossCutting.IoC", "Lottery.Gamming.Infra.CrossCutting.IoC\Lottery.Gamming.Infra.CrossCutting.IoC.csproj", "{B639C654-6883-4275-9B8C-A0A8F958537E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lottery.Gamming.Test", "Lottery.Gamming.Test\Lottery.Gamming.Test.csproj", "{6995D37A-F76A-44B8-8C98-8B75198E9DE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B261E58-224A-40C8-9DAB-29C4696004DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B261E58-224A-40C8-9DAB-29C4696004DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B261E58-224A-40C8-9DAB-29C4696004DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B261E58-224A-40C8-9DAB-29C4696004DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B35B9AC-DA41-4446-815B-33A7DEB93B0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B35B9AC-DA41-4446-815B-33A7DEB93B0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B35B9AC-DA41-4446-815B-33A7DEB93B0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B35B9AC-DA41-4446-815B-33A7DEB93B0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B639C654-6883-4275-9B8C-A0A8F958537E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B639C654-6883-4275-9B8C-A0A8F958537E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B639C654-6883-4275-9B8C-A0A8F958537E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B639C654-6883-4275-9B8C-A0A8F958537E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6995D37A-F76A-44B8-8C98-8B75198E9DE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6995D37A-F76A-44B8-8C98-8B75198E9DE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6995D37A-F76A-44B8-8C98-8B75198E9DE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6995D37A-F76A-44B8-8C98-8B75198E9DE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
