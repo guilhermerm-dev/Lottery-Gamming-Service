@@ -22,7 +22,6 @@ public class DrawLotoFacilGames : IDrawLotoFacilGames
         {
             LotoFacilGame lotoFacilGame = new LotoFacilGame(_finalNumber, _quantityOfNumbers);
             lotoFacilGame.DrawGame();
-            lotoFacilGame.Sort();
             games.Add(lotoFacilGame);
         }
         _logger.LogInformation($"Successfully generate {quantity} loto facil games!");

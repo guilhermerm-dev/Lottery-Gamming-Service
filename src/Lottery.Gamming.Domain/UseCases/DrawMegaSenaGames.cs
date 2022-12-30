@@ -21,7 +21,6 @@ public class DrawMegaSenaGames : IDrawMegaSenaGames
         {
             MegaSenaGame megaSenaGame = new MegaSenaGame(_finalNumber, _quantityOfNumbers);
             megaSenaGame.DrawGame();
-            megaSenaGame.Sort();
             games.Add(megaSenaGame);
         }
         _logger.LogInformation($"Successfully generate {quantity} mega sena games!");

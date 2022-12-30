@@ -32,8 +32,4 @@ public abstract class Game
             }
         }
     }
-
-    public virtual void Sort(){
-        Numbers.OrderBy(n => n);
-    }
 }
