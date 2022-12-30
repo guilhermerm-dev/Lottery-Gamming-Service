@@ -12,7 +12,7 @@ public abstract class Game
     protected int _quantityOfNumbers;
     protected readonly Random _random;
     public abstract List<int> Numbers { get; protected set; }
-    public virtual void DrawGames()
+    public virtual void DrawGame()
     {
         for (int i = 0; i < _quantityOfNumbers; i++)
         {
@@ -31,5 +31,9 @@ public abstract class Game
                 Numbers.Add(number);
             }
         }
+    }
+
+    public virtual void Sort(){
+        Numbers.OrderBy(n => n);
     }
 }

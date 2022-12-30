@@ -20,7 +20,8 @@ public class DrawMegaSenaGames : IDrawMegaSenaGames
         for (int i = 0; i < quantity; i++)
         {
             MegaSenaGame megaSenaGame = new MegaSenaGame(_finalNumber, _quantityOfNumbers);
-            megaSenaGame.DrawGames();
+            megaSenaGame.DrawGame();
+            megaSenaGame.Sort();
             games.Add(megaSenaGame);
         }
         _logger.LogInformation($"Successfully generate {quantity} mega sena games!");
