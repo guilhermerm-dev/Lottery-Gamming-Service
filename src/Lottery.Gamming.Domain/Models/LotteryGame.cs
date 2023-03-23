@@ -2,8 +2,8 @@ namespace Lottery.Gamming.Domain.Models;
 
 public abstract class LotteryGame
 {
+  private const int _initialNumber = 1;
   protected readonly Random _random;
-  protected readonly int _initialNumber = 1;
 
   protected LotteryGame()
   {
