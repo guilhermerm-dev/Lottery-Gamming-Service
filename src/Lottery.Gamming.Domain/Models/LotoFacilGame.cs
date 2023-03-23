@@ -1,14 +1,9 @@
 namespace Lottery.Gamming.Domain.Models;
 
-public class LotoFacilGame : Game
+public class LotoFacilGame : LotteryGame
 {
-    public LotoFacilGame(int finalNumber, int quantityOfNumbers)
-    {
-        _finalNumber = finalNumber;
-        _quantityOfNumbers = quantityOfNumbers;
-        Numbers = new List<int>();
-    }
+  public LotoFacilGame(int finalNumber, int quantityOfNumbers) : base(finalNumber, quantityOfNumbers)
+  {
 
-    public override List<int> Numbers { get; protected set; }
-
+  }
 }

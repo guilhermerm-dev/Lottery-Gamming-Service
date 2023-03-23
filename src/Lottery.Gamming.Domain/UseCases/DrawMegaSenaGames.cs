@@ -14,9 +14,9 @@ public class DrawMegaSenaGames : IDrawMegaSenaGames
         _logger = logger;
     }
 
-    public List<Game> Execute(int quantity)
+    public List<LotteryGame> Execute(int quantity)
     {
-        List<Game> games = new List<Game>();
+        List<LotteryGame> games = new List<LotteryGame>();
         for (int i = 0; i < quantity; i++)
         {
             MegaSenaGame megaSenaGame = new MegaSenaGame(_finalNumber, _quantityOfNumbers);

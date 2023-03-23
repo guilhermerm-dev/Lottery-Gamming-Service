@@ -4,5 +4,5 @@ namespace Lottery.Gamming.Domain.UseCases;
 
 public interface IDrawMegaSenaGames
 {
-    public List<Game> Execute(int quantity);
+    public List<LotteryGame> Execute(int quantity);
 }

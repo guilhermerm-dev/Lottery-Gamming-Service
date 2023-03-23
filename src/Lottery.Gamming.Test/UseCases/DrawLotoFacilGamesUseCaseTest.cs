@@ -26,7 +26,7 @@ public class DrawLotoFacilGamesUseCaseTest
     public void ShouldGenerateThreeGames()
     {
         int quantity = 3;
-        List<Game> lotoFacilGames = _drawLotoFacilGamesUseCase.Execute(quantity);
+        List<LotteryGame> lotoFacilGames = _drawLotoFacilGamesUseCase.Execute(quantity);
         lotoFacilGames.ForEach(game => Assert.AreEqual(_quantityOfNumbers, game.Numbers.Count));
         Assert.AreEqual(3, lotoFacilGames.Count);
     }
@@ -35,7 +35,7 @@ public class DrawLotoFacilGamesUseCaseTest
     public void ShouldGenerateTwoGames()
     {
         int quantity = 2;
-        List<Game> lotoFacilGames = _drawLotoFacilGamesUseCase.Execute(quantity);
+        List<LotteryGame> lotoFacilGames = _drawLotoFacilGamesUseCase.Execute(quantity);
         lotoFacilGames.ForEach(game => Assert.AreEqual(_quantityOfNumbers, game.Numbers.Count));
         Assert.AreEqual(2, lotoFacilGames.Count);
     }
@@ -44,7 +44,7 @@ public class DrawLotoFacilGamesUseCaseTest
     public void ShouldGenerateOneGames()
     {
         int quantity = 1;
-        List<Game> lotoFacilGames = _drawLotoFacilGamesUseCase.Execute(quantity);
+        List<LotteryGame> lotoFacilGames = _drawLotoFacilGamesUseCase.Execute(quantity);
         lotoFacilGames.ForEach(game => Assert.AreEqual(_quantityOfNumbers, game.Numbers.Count));
         Assert.AreEqual(1, lotoFacilGames.Count);
     }
@@ -53,7 +53,7 @@ public class DrawLotoFacilGamesUseCaseTest
     public void ShouldNotContainSameNumbers()
     {
         int quantity = 1;
-        List<Game> lotoFacilGames = _drawLotoFacilGamesUseCase.Execute(quantity);
+        List<LotteryGame> lotoFacilGames = _drawLotoFacilGamesUseCase.Execute(quantity);
         Assert.AreEqual(false, lotoFacilGames.Exists(game => HasDuplicates(game.Numbers)));
     }
 

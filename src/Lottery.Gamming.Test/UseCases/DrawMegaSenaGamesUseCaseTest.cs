@@ -26,7 +26,7 @@ public class DrawMegaSenaGamesUseCaseTest
     public void ShouldGenerateThreeGames()
     {
         int quantity = 3;
-        List<Game> megaSenaGames = _drawMegaSenaGamesUseCase.Execute(quantity);
+        List<LotteryGame> megaSenaGames = _drawMegaSenaGamesUseCase.Execute(quantity);
         megaSenaGames.ForEach(game => Assert.AreEqual(_quantityOfNumbers, game.Numbers.Count));
         Assert.AreEqual(3, megaSenaGames.Count);
     }
@@ -35,7 +35,7 @@ public class DrawMegaSenaGamesUseCaseTest
     public void ShouldGenerateTwoGames()
     {
         int quantity = 2;
-        List<Game> megaSenaGames = _drawMegaSenaGamesUseCase.Execute(quantity);
+        List<LotteryGame> megaSenaGames = _drawMegaSenaGamesUseCase.Execute(quantity);
         megaSenaGames.ForEach(game => Assert.AreEqual(_quantityOfNumbers, game.Numbers.Count));
         Assert.AreEqual(2, megaSenaGames.Count);
     }
@@ -44,7 +44,7 @@ public class DrawMegaSenaGamesUseCaseTest
     public void ShouldGenerateOneGames()
     {
         int quantity = 1;
-        List<Game> megaSenaGames = _drawMegaSenaGamesUseCase.Execute(quantity);
+        List<LotteryGame> megaSenaGames = _drawMegaSenaGamesUseCase.Execute(quantity);
         megaSenaGames.ForEach(game => Assert.AreEqual(_quantityOfNumbers, game.Numbers.Count));
         Assert.AreEqual(1, megaSenaGames.Count);
     }
@@ -53,7 +53,7 @@ public class DrawMegaSenaGamesUseCaseTest
     public void ShouldNotContainSameNumbers()
     {
         int quantity = 1;
-        List<Game> megaSenaGames = _drawMegaSenaGamesUseCase.Execute(quantity);
+        List<LotteryGame> megaSenaGames = _drawMegaSenaGamesUseCase.Execute(quantity);
         Assert.AreEqual(false, megaSenaGames.Exists(game => HasDuplicates(game.Numbers)));
     }
 

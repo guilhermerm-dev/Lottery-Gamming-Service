@@ -15,9 +15,9 @@ public class DrawLotoFacilGames : IDrawLotoFacilGames
         _logger = logger;
     }
 
-    public List<Game> Execute(int quantity)
+    public List<LotteryGame> Execute(int quantity)
     {
-        List<Game> games = new List<Game>();
+        List<LotteryGame> games = new List<LotteryGame>();
         for (int i = 0; i < quantity; i++)
         {
             LotoFacilGame lotoFacilGame = new LotoFacilGame(_finalNumber, _quantityOfNumbers);

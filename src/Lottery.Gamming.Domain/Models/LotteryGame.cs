@@ -1,17 +1,20 @@
 namespace Lottery.Gamming.Domain.Models;
 
-public abstract class Game
+public class LotteryGame
 {
-    protected Game()
+    public LotteryGame(int finalNumber, int quantityOfNumbers)
     {
+        _finalNumber = finalNumber;
+        _quantityOfNumbers = quantityOfNumbers;
         _random = new Random();
+        Numbers = new List<int>();
     }
 
-    protected int _initialNumber = 1;
+    protected readonly int _initialNumber = 1;
     protected int _finalNumber;
     protected int _quantityOfNumbers;
     protected readonly Random _random;
-    public abstract List<int> Numbers { get; protected set; }
+    public List<int> Numbers { get; }
     public virtual void DrawGame()
     {
         for (int i = 0; i < _quantityOfNumbers; i++)
