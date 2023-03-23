@@ -5,9 +5,6 @@ namespace Lottery.Gamming.Domain.UseCases;
 
 public class DrawLotoFacilGames : IDrawLotoFacilGames
 {
-    private static readonly int _finalNumber = 25;
-    private static readonly int _quantityOfNumbers = 15;
-
     private readonly ILogger<DrawLotoFacilGames> _logger;
 
     public DrawLotoFacilGames(ILogger<DrawLotoFacilGames> logger)
@@ -20,7 +17,7 @@ public class DrawLotoFacilGames : IDrawLotoFacilGames
         List<LotteryGame> games = new List<LotteryGame>();
         for (int i = 0; i < quantity; i++)
         {
-            LotoFacilGame lotoFacilGame = new LotoFacilGame(_finalNumber, _quantityOfNumbers);
+            LotoFacilGame lotoFacilGame = new LotoFacilGame();
             lotoFacilGame.DrawGame();
             games.Add(lotoFacilGame);
         }

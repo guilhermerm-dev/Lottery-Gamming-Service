@@ -5,8 +5,6 @@ namespace Lottery.Gamming.Domain.UseCases;
 
 public class DrawMegaSenaGames : IDrawMegaSenaGames
 {
-    private static readonly int _finalNumber = 60;
-    private static readonly int _quantityOfNumbers = 6;
     private readonly ILogger<DrawMegaSenaGames> _logger;
 
     public DrawMegaSenaGames(ILogger<DrawMegaSenaGames> logger)
@@ -19,7 +17,7 @@ public class DrawMegaSenaGames : IDrawMegaSenaGames
         List<LotteryGame> games = new List<LotteryGame>();
         for (int i = 0; i < quantity; i++)
         {
-            MegaSenaGame megaSenaGame = new MegaSenaGame(_finalNumber, _quantityOfNumbers);
+            MegaSenaGame megaSenaGame = new MegaSenaGame();
             megaSenaGame.DrawGame();
             games.Add(megaSenaGame);
         }
